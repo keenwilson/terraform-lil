@@ -6,3 +6,8 @@ resource "aws_vpc" "environment-example-two" {
       Name = "terraform-aws-vpc-example-two"
   }
 }
+
+resource "aws_instance" "example" {
+  ami           = "ami-a0cfeed8"
+  instance_type = "t2.micro"
+}
